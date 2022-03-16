@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_page">10dp</dimen>
+    <dimen name="margin_component">5dp</dimen>
+
+    <dimen name="icon_size_h0">150sp</dimen>
+    <dimen name="icon_size_h1">120sp</dimen>
+    <dimen name="icon_size_h2">80sp</dimen>
+    <dimen name="icon_size_h3">60sp</dimen>
+    <dimen name="icon_size_h4">40sp</dimen>
+    <dimen name="icon_size_h5">32sp</dimen>
+    <dimen name="icon_size_h6">24sp</dimen>
+    <dimen name="icon_size_h7">20sp</dimen>
+
+    <dimen name="layout_size_h0">300dp</dimen>
+    <dimen name="layout_size_h1">200dp</dimen>
+    <dimen name="layout_size_h2">150dp</dimen>
+    <dimen name="layout_size_h3">100dp</dimen>
+    <dimen name="layout_size_h4">50dp</dimen>
+
+    <dimen name="image_size_h0">300dp</dimen>
+    <dimen name="image_size_h1">260dp</dimen>
+    <dimen name="image_size_h2">220dp</dimen>
+    <dimen name="image_size_h3">180dp</dimen>
+    <dimen name="image_size_h4">140dp</dimen>
+    <dimen name="image_size_h5">100dp</dimen>
+
+    <dimen name="text_size_h0">23sp</dimen>
+    <dimen name="text_size_h1">21sp</dimen>
+    <dimen name="text_size_h2">19sp</dimen>
+    <dimen name="text_size_h3">17sp</dimen>
+    <dimen name="text_size_h4">15sp</dimen>
+    <dimen name="text_size_h5">13sp</dimen>
+
+    <dimen name="margin_h0">24dp</dimen>
+    <dimen name="margin_h1">20dp</dimen>
+    <dimen name="margin_h2">16dp</dimen>
+    <dimen name="margin_h3">12dp</dimen>
+    <dimen name="margin_h4">8dp</dimen>
+    <dimen name="margin_h5">4dp</dimen>
+
+    <dimen name="padding_h0">24dp</dimen>
+    <dimen name="padding_h1">20dp</dimen>
+    <dimen name="padding_h2">16dp</dimen>
+    <dimen name="padding_h3">12dp</dimen>
+    <dimen name="padding_h4">8dp</dimen>
+    <dimen name="padding_h5">4dp</dimen>
+
+    <dimen name="size_item_custom_h0">300dp</dimen>
+    <dimen name="size_item_custom_h1">250dp</dimen>
+    <dimen name="size_item_custom_h2">200dp</dimen>
+    <dimen name="size_item_custom_h3">170dp</dimen>
+
+    <dimen name="height_layout_button_h5">30dp</dimen>
+    <dimen name="height_layout_button_h4">40dp</dimen>
+    <dimen name="height_layout_button_h3">45dp</dimen>
+    <dimen name="height_layout_button_h2">50dp</dimen>
+    <dimen name="height_layout_button_h1">60dp</dimen>
+</resources>

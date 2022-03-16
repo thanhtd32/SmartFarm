@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_page"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/title_pump_setup_formula_formula" />
+
+            <Spinner
+                android:background="@drawable/spinner_background"
+                android:id="@+id/spFormula"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_page"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_page"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/title_pump_mix_formula_quantity_mix" />
+
+            <EditText
+                android:id="@+id/edtQuantity"
+                android:background="@drawable/border_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_layout_button_h4"
+                android:textSize="@dimen/text_size_h1"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_page"
+                android:paddingLeft="@dimen/margin_page"
+                android:inputType="numberDecimal"
+                android:text="" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btStartMix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_page"
+            android:text="@string/bt_start_mix" />
+
+        <Button
+            android:id="@+id/btCancelMix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_page"
+            android:text="@string/bt_cancel_mix" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgPumpOne"
+                    android:background="@drawable/pump"
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/icon_size_h2"
+                    android:layout_height="@dimen/icon_size_h3"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:text="@string/title_pump_mix_formula_pump_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></TextView>
+
+
+                <TextView
+                    android:id="@+id/tvPressureOne"
+                    android:layout_marginTop="@dimen/margin_component"
+                    android:gravity="center"
+                    android:text="0 ml/s"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgPumpTwo"
+                    android:background="@drawable/pump"
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/icon_size_h2"
+                    android:layout_height="@dimen/icon_size_h3"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:text="@string/title_pump_mix_formula_pump_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></TextView>
+
+                <TextView
+                    android:id="@+id/tvPressureTwo"
+                    android:layout_marginTop="@dimen/margin_component"
+                    android:gravity="center"
+                    android:text="0 ml/s"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgPumpThree"
+                    android:background="@drawable/pump"
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/icon_size_h2"
+                    android:layout_height="@dimen/icon_size_h3"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:text="@string/title_pump_mix_formula_pump_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></TextView>
+
+                <TextView
+                    android:id="@+id/tvPressureThree"
+                    android:layout_marginTop="@dimen/margin_component"
+                    android:gravity="center"
+                    android:text="0 ml/s"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewWater"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_page"
+                    android:backgroundTint="@color/blackLight"
+                    app:cardCornerRadius="@dimen/margin_page">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/margin_page"
+                        android:paddingBottom="@dimen/margin_page">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.5"
+                            app:srcCompat="@drawable/water_bucket" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/title_pump_setup_formula_water"
+                                android:textSize="@dimen/text_size_h1"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/title_pump_setup_formula_rate"></TextView>
+
+                                <TextView
+                                    android:id="@+id/tvWaterStatus"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_page"
+                                    android:layout_weight="1"
+                                    android:text="0%"
+                                    android:width="@dimen/padding_h1"
+                                    android:textSize="@dimen/text_size_h0" />
+
+                                <TextView
+                                    android:id="@+id/tvWaterQuantity"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="0"
+                                    android:width="@dimen/padding_h1"
+                                    android:textSize="@dimen/text_size_h0" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_page"
+                    android:backgroundTint="@color/blackLight"
+                    app:cardCornerRadius="@dimen/margin_page">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/margin_page"
+                        android:paddingBottom="@dimen/margin_page">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.5"
+                            app:srcCompat="@drawable/chemical_bucket" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/title_pump_setup_formula_liquid_one"
+                                android:textSize="@dimen/text_size_h1"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/title_pump_setup_formula_rate"></TextView>
+
+                                <TextView
+                                    android:id="@+id/tvLiquidOneStatus"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_page"
+                                    android:layout_weight="1"
+                                    android:width="@dimen/padding_h1"
+                                    android:text="0%"
+                                    android:textSize="@dimen/text_size_h0" />
+
+                                <TextView
+                                    android:id="@+id/tvLiquidOneQuantity"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="0"
+                                    android:width="@dimen/padding_h1"
+                                    android:textSize="@dimen/text_size_h0" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_page"
+                    android:backgroundTint="@color/blackLight"
+                    app:cardCornerRadius="@dimen/margin_page">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/margin_page"
+                        android:paddingBottom="@dimen/margin_page">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.5"
+                            app:srcCompat="@drawable/chemical_bucket" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/title_pump_setup_formula_liquid_two"
+                                android:textSize="@dimen/text_size_h1"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/title_pump_setup_formula_rate"></TextView>
+
+                                <TextView
+                                    android:id="@+id/tvLiquidTwoStatus"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_page"
+                                    android:layout_weight="1"
+                                    android:width="@dimen/padding_h1"
+                                    android:text="0%"
+                                    android:textSize="@dimen/text_size_h0" />
+
+                                <TextView
+                                    android:id="@+id/tvLiquidTwoQuantity"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="0"
+                                    android:width="@dimen/padding_h1"
+                                    android:textSize="@dimen/text_size_h0" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_page"
+                    android:backgroundTint="@color/blackLight"
+                    app:cardCornerRadius="@dimen/margin_page">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/margin_page"
+                        android:paddingBottom="@dimen/margin_page">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.5"
+                            app:srcCompat="@drawable/chemical_bucket" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/title_pump_setup_formula_liquid_three"
+                                android:textSize="@dimen/text_size_h1"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/title_pump_setup_formula_rate"></TextView>
+
+                                <TextView
+                                    android:id="@+id/tvLiquidThreeStatus"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_page"
+                                    android:layout_weight="1"
+                                    android:width="@dimen/padding_h1"
+                                    android:text="0%"
+                                    android:textSize="@dimen/text_size_h0" />
+
+                                <TextView
+                                    android:id="@+id/tvLiquidThreeQuantity"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="0"
+                                    android:width="@dimen/padding_h1"
+                                    android:textSize="@dimen/text_size_h0" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewFour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_page"
+                    android:backgroundTint="@color/blackLight"
+                    app:cardCornerRadius="@dimen/margin_page">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/margin_page"
+                        android:paddingBottom="@dimen/margin_page">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.5"
+                            app:srcCompat="@drawable/chemical_bucket" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/title_pump_setup_formula_liquid_four"
+                                android:textSize="@dimen/text_size_h1"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/title_pump_setup_formula_rate"></TextView>
+
+                                <TextView
+                                    android:id="@+id/tvLiquidFourStatus"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_page"
+                                    android:layout_weight="1"
+                                    android:width="@dimen/padding_h1"
+                                    android:text="0%"
+                                    android:textSize="@dimen/text_size_h0" />
+
+                                <TextView
+                                    android:id="@+id/tvLiquidFourQuantity"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="0"
+                                    android:width="@dimen/padding_h1"
+                                    android:textSize="@dimen/text_size_h0" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

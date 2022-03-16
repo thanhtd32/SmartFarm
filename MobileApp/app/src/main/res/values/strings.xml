@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Smart Farming</string>
+
+    <!-- button common-->
+    <string name="bt_add">Add formula</string>
+    <string name="bt_Save">Save</string>
+    <string name="bt_Cancel">Delete</string>
+    <string name="title_yes">Yes</string>
+    <string name="title_no">No</string>
+
+    <!--message common-->
+    <string name="msg_save_success">Save Success</string>
+    <string name="msg_success">Success</string>
+
+    <!-- pump -->
+    <string name="title_pump_view_parameter">Parameters</string>
+    <string name="title_pump_mix_formula">Run</string>
+    <string name="title_pump_setup_formula">Formula</string>
+
+    <!-- pump setting -->
+    <string name="title_pump_setup_ph">PH</string>
+    <string name="title_pump_setup_ec">EC</string>
+    <string name="title_pump_setup_pressure">Pressure</string>
+
+    <!-- pump setup -->
+    <string name="title_pump_setup_formula_formula">Formula</string>
+    <string name="title_pump_setup_formula_rate">Ratio</string>
+    <string name="title_pump_setup_formula_liquid_one">Liquid 1</string>
+    <string name="title_pump_setup_formula_liquid_two">Liquid 2</string>
+    <string name="title_pump_setup_formula_liquid_three">Liquid 3</string>
+    <string name="title_pump_setup_formula_liquid_four">Liquid 4</string>
+    <string name="title_pump_setup_formula_water">Water</string>
+    <string name="msg_you_can_remove_this_formula">You want to delete this formula?</string>
+    <string name="msg_the_total_radio_should_be_100">The total nutrient ratio must be 100%.</string>
+    <string name="msg_valid_input">Need to fill out the information completely</string>
+    <string name="msg_formula_not_exist">Formula does not exist</string>
+    <string name="msg_the_formula_name_already_exists">Formula name already exists</string>
+
+    <!-- pump mix -->
+    <string name="bt_start_mix">Start mixing</string>
+    <string name="bt_cancel_mix">Stop mixing</string>
+    <string name="title_pump_mix_formula_status">Status</string>
+    <string name="title_pump_mix_formula_flow">Flow</string>
+    <string name="title_pump_mix_formula_pump_one">Pump 1</string>
+    <string name="title_pump_mix_formula_pump_two">Pump 2</string>
+    <string name="title_pump_mix_formula_pump_three">Pump 3</string>
+    <string name="msg_please_select_formula_and_enter_quantity">Please select the formula and enter the quantity</string>
+    <string name="msg_choose_cancel_mix_formula">You want to stop mixing?</string>
+    <string name="msg_mix_formula_is_mixing">System is running</string>
+    <string name="msg_mix_formula_is_not_mixing">The system is down, so can not cancel</string>
+    <string name="title_pump_mix_formula_quantity_mix">Mixing volume</string>
+
+</resources>
