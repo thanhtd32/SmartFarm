@@ -13,10 +13,11 @@ Blog study coding: https://duythanhcse.wordpress.com/
 
 Group support: https://www.facebook.com/groups/communityuni/
 
-![alt text](https://raw.githubusercontent.com/thanhtd32/SmartFarm/main/Figures/database-structure.PNG)
 
 # Database
 The Database structure and tracking data in the Smart Farm, available at the link https://github.com/thanhtd32/SmartFarm/blob/main/Database/SmartFarm_Database_Script.sql
+![alt text](https://raw.githubusercontent.com/thanhtd32/SmartFarm/main/Figures/database-structure.PNG)
+
 
 # MQTT Server Project
 The MQTT Server Project for Smart Farm implementation, available at the link https://github.com/thanhtd32/SmartFarm/tree/main/MQTTServer
